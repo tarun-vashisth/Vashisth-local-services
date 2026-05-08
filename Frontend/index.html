@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vashisth Local Services - Faridabad's Trusted Home Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="logo-loader">
+                <i class="fas fa-wrench"></i>
+                <span>Vashisth</span>
+            </div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <i class="fas fa-wrench"></i>
+                <span>Vashisth Local Service</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+            </ul>
+            <div class="header-actions">
+                <a href="tel:9315414195" class="phone-btn"><i class="fas fa-phone"></i> 9315414195</a>
+                <a href="#booking" class="cta-btn">Book Now</a>
+            </div>
+            <div class="mobile-menu"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Faridabad's #1 Local Service</div>
+                <h1 class="hero-title">One Specialist.<br>Every Fix. Guaranteed.</h1>
+                <p class="hero-subtitle">Professional Electrician, Plumbing, AC Repair, Cleaning, Salon at Home & Car Wash. Same day service across all Faridabad sectors.</p>
+                <div class="hero-stats">
+                    <div class="stat-mini">
+                        <span class="stat-number">4.9</span>
+                        <span>★ Rating</span>
+                    </div>
+                    <div class="stat-mini">
+                        <span class="stat-number">2.5K+</span>
+                        <span>Homes</span>
+                    </div>
+                    <div class="stat-mini">
+                        <span class="stat-number">24/7</span>
+                        <span>Service</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#booking" class="cta-btn primary large">Book Service Now</a>
+                    <a href="tel:9315414195" class="cta-btn secondary large">Call 9315414195</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="quick-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card teal">
+                    <div class="stat-icon"><i class="fas fa-home"></i></div>
+                    <div class="stat-number">2500+</div>
+                    <div class="stat-label">Homes Serviced</div>
+                </div>
+                <div class="stat-card gold">
+                    <div class="stat-icon"><i class="fas fa-star"></i></div>
+                    <div class="stat-number">4.9/5</div>
+                    <div class="stat-label">800+ Reviews</div>
+                </div>
+                <div class="stat-card emerald">
+                    <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                    <div class="stat-number">7 Yrs</div>
+                    <div class="stat-label">Local Experience</div>
+                </div>
+                <div class="stat-card teal">
+                    <div class="stat-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Emergency Service</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Expert Services</h2>
+                <p>Handpicked professionals with 7+ years experience. 60-day work guarantee.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Electrician -->
+                <div class="service-card" data-service="electrician">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop" alt="Electrician" loading="lazy">
+                        <div class="service-overlay">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Certified Electrician</h3>
+                        <p>24/7 wiring, fans, lights, MCB repairs. Same day service guarantee.</p>
+                        <div class="service-price">₹150 onwards</div>
+                    </div>
+                </div>
+
+                <!-- Plumbing -->
+                <div class="service-card" data-service="plumbing">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ffe6e9?w=400&h=300&fit=crop" alt="Plumber" loading="lazy">
+                        <div class="service-overlay">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Expert Plumbing</h3>
+                        <p>Leaks, clogs, geysers, bathroom fittings. Emergency response in 45 mins.</p>
+                        <div class="service-price">Starting ₹200 onwards</div>
+                    </div>
+                </div>
+
+                <!-- AC Repair -->
+                <div class="service-card" data-service="acrepair">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1598563115559-864cc7a3b6ed?w=400&h=300&fit=crop" alt="AC Repair" loading="lazy">
+                        <div class="service-overlay">
+                            <i class="fas fa-fan"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>AC Service & Repair</h3>
+                        <p>Gas refilling, deep cleaning, installation. All brands - Voltas, LG, Daikin.</p>
+                        <div class="service-price">Starting ₹500 onwards</div>
+                    </div>
+                </div>
+
+                <!-- Cleaning -->
+                <div class="service-card" data-service="cleaning">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1559595235-7b9760e3c3b9?w=400&h=300&fit=crop" alt="Cleaning" loading="lazy">
+                        <div class="service-overlay">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Deep Cleaning</h3>
+                        <p>Sofa, mattress, kitchen, bathroom. Steam cleaning with eco-friendly products.</p>
+                        <div class="service-price">₹999 onwards</div>
+                    </div>
+                </div>
+
+                <!-- Salon -->
+                <div class="service-card" data-service="salon">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?w=400&h=300&fit=crop" alt="Salon at Home" loading="lazy">
+                        <div class="service-overlay">
+                            <i class="fas fa-scissors"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Salon at Home</h3>
+                        <p>Bridal makeup, hair styling, facials. Female professionals available.</p>
+                        <div class="service-price">₹500 onwards</div>
+                    </div>
+                </div>
+
+                <!-- Car Wash -->
+                <div class="service-card" data-service="carwash">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&h=300&fit=crop" alt="Car Wash" loading="lazy">
+                        <div class="service-overlay">
+                            <i class="fas fa-car"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Premium Car Wash</h3>
+                        <p>Steam wash, interior vacuuming, ceramic coating at your parking spot.</p>
+                        <div class="service-price">₹300 onwards</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Book in 60 seconds. Service in hours.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Pick Service</h3>
+                    <p>Select from 6 services or describe your problem</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Book Slot</h3>
+                    <p>Specialist calls within 15 mins with transparent quote</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Pro Arrives</h3>
+                    <p>Verified, uniformed expert at your door</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Pay Happy</h3>
+                    <p>Pay only after 100% satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Why Choose Vashisth?</h2>
+                    <div class="guarantee-card">
+                        <div class="guarantee-icon teal"><i class="fas fa-shield-alt"></i></div>
+                        <h3>60-Day Guarantee</h3>
+                        <p>Same issue returns? We fix FREE.</p>
+                    </div>
+                    <div class="guarantee-card">
+                        <div class="guarantee-icon gold"><i class="fas fa-user-check"></i></div>
+                        <h3>Verified Pros</h3>
+                        <p>Police verified, uniformed, trained specialists</p>
+                    </div>
+                    <div class="guarantee-card">
+                        <div class="guarantee-icon emerald"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Full Coverage</h3>
+                        <p>Old Faridabad, NIT, Sectors 1-89, Greater Faridabad</p>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-highlight">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Same Day Service</h3>
+                        <p>45 min response time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Faridabad Says</h2>
+                <div class="rating-display">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span>4.9 (800+ reviews)</span>
+                </div>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">"AC gas leak fixed in 45 mins on hottest day! No upselling, fair price. Highly recommend!"</div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face" alt="Anjali" class="author-img">
+                        <div>
+                            <div class="author-name">Anjali Sharma</div>
+                            <div class="author-location">Sector 21</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more testimonials -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-header">
+                    <h2>Book Your Service</h2>
+                    <p>Fill form or <a href="tel:9315414195">call 9315414195</a> for instant help</p>
+                </div>
+                <form id="bookingForm" class="booking-form">
+                    <!-- Same form structure as before but with new styling -->
+                    <input type="hidden" id="serviceCategory" name="serviceCategory">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 9315414195" required>
+                        </div>
+                    </div>
+                    <!-- Rest of form same as previous -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Service Category *</label>
+                            <select id="serviceSelect" name="serviceSelect" required>
+                                <option value="">Select Service</option>
+                                <option value="Electrician">Electrician</option>
+                                <option value="Plumbing">Plumbing</option>
+                                <option value="AC Repair">AC Repair</option>
+                                <option value="Cleaning">Deep Cleaning</option>
+                                <option value="Salon">Salon at Home</option>
+                                <option value="Car Wash">Car Wash</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Date *</label>
+                            <input type="date" id="preferredDate" name="preferredDate" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Complete Address *</label>
+                        <textarea id="address" name="address" rows="2" placeholder="House no, sector, landmark, Faridabad" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Problem Summary *</label>
+                            <input type="text" id="problem" name="problem" placeholder="e.g. AC not cooling" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Time</label>
+                            <select id="preferredTime" name="preferredTime">
+                                <option>10:00 AM - 12:00 PM</option>
+                                <option>12:00 PM - 2:00 PM</option>
+                                <option>2:00 PM - 4:00 PM</option>
+                                <option>4:00 PM - 6:00 PM</option>
+                                <option>6:00 PM - 8:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Describe Issue (Optional)</label>
+                        <textarea id="description" name="description" rows="3" placeholder="Brand, model, when it started, photos if possible..."></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn primary full-width">Submit Booking Request</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-wrench"></i>
+                        <span>Vashisth Local Service</span>
+                    </div>
+                    <p>Faridabad's trusted home services. 7 years, 2500+ happy homes.</p>
+                    <div class="contact-quick">
+                        <a href="tel:9315414195" class="quick-contact"><i class="fas fa-phone"></i> 9315414195</a>
+                        <a href="mailto:tarunvashisth823@gmail.com" class="quick-contact"><i class="fas fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Electrician</a></li>
+                        <li><a href="#">Plumbing</a></li>
+                        <li><a href="#">AC Repair</a></li>
+                        <li><a href="#">Cleaning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Areas Covered</h4>
+                    <ul>
+                        <li>Old Faridabad</li>
+                        <li>NIT Faridabad</li>
+                        <li>Sectors 1-89</li>
+                        <li>Greater Faridabad</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-grid">
+                        <a href="#" class="social-btn facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919315414195" class="social-btn whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:tarunvashisth823@gmail.com" class="social-btn email" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Vashisth Local Services. Faridabad's Most Trusted. | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919315414195?text=Hi%20Vashisth%20Team%2C%20I%20need%20service%20in%20Faridabad" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat Now</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
