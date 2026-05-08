@@ -220,7 +220,7 @@ function formValidation() {
             const data = Object.fromEntries(formData);
             
             // Backend submission
-            const response = await fetch('/api/bookings', {
+            const response = await fetch('https://vashisth-local-services-backend.onrender.com/api/bookings', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
