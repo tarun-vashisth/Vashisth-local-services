@@ -151,7 +151,7 @@ function statsCounter() {
 }
 
 function animateCounters() {
-    const counters = document.querySelectorAll('.stat-number');
+    const counters = document.querySelectorAll('.stat-number:not(.no-counter)');
     
     counters.forEach(counter => {
         const target = parseFloat(counter.getAttribute('data-target')) || parseFloat(counter.textContent);
