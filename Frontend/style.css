@@ -966,3 +966,19 @@ footer {
         margin-top: 2rem;
     }
 }
+.process-section .section-header,
+.booking-section .section-header {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.process-section .section-header h2 {
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: white;
+    color: white;
+}
+
+.process-section .section-header p {
+    color: rgba(255, 255, 255, 0.9);
+}
