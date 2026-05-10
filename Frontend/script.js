@@ -194,7 +194,8 @@ function formValidation() {
         const phone = e.target.value.replace(/\D/g, '');
         const phoneRegex = /^[6-9]\d{9}$/;
         
-        if (phone.length === 10 && phoneRegex.test(phone)) {
+        const digits = phone.startsWith('91') && phone.length === 12 ? phone.slice(2) : phone;
+if (digits.length === 10 && phoneRegex.test(digits)) {
             e.target.style.borderColor = '#10B981';
         } else if (phone.length > 0) {
             showMessage('Please enter valid 10-digit mobile number', 'error');
@@ -253,7 +254,10 @@ function formValidation() {
 }
 
 function validateForm() {
-    const phone = document.getElementById('phone').value.replace(/\D/g, '');
+    let phone = document.getElementById('phone').value.replace(/\D/g, '');
+    if (phone.startsWith('91') && phone.length === 12) {
+        phone = phone.slice(2);
+    }
     const phoneRegex = /^[6-9]\d{9}$/;
     
     if (!phoneRegex.test(phone)) {
