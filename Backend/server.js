@@ -242,3 +242,9 @@ app.use((err, req, res, next) => {
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
+// Keep server alive
+setInterval(() => {
+    fetch('https://vashisth-local-services-backend.onrender.com/health')
+        .then(() => console.log('Server kept alive'))
+        .catch(() => {});
+}, 14 * 60 * 1000); // every 14 minutes
