@@ -103,6 +103,14 @@ app.post('/api/bookings', async (req, res) => {
             storedIn: dbConnected ? 'MongoDB' : 'memory'
         });
         
+       // Send response FIRST (fast!)
+        res.json({ 
+            success: true, 
+            message: 'Booking created! Specialist will call within 15 minutes.',
+            bookingId: dbConnected ? booking._id : null
+        });
+
+        // Send email AFTER (non-blocking)
         if (emailEnabled && transporter) {
             const adminEmail = {
                 from: `"Vashisth Bot" <${process.env.EMAIL_USER}>`,
@@ -118,19 +126,11 @@ app.post('/api/bookings', async (req, res) => {
                     subject: '✅ Your Service Booking Confirmed!',
                     html: generateCustomerEmail(bookingData)
                 };
-                await transporter.sendMail(customerEmail);
+                transporter.sendMail(customerEmail).catch(console.error);
             }
 
-            await transporter.sendMail(adminEmail);
-        } else {
-            console.log('Email sending skipped because EMAIL_USER/EMAIL_PASS is not configured.');
+            transporter.sendMail(adminEmail).catch(console.error);
         }
-        
-        res.json({ 
-            success: true, 
-            message: 'Booking created! Specialist will call within 15 minutes.',
-            bookingId: dbConnected ? booking._id : null
-        });
         
     } catch (error) {
         console.error('Booking Error:', error);
